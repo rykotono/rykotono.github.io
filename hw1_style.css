@@ -1,0 +1,25 @@
+body
+{
+    background-color: lightgrey;
+}
+h1
+{
+    text-align: center;
+}
+
+.box1
+{
+    width: 1000px;
+    height: 270px;    
+}
+
+.img
+{
+    width: 300px;
+    float: left;
+}   
+
+h2
+{
+    text-align: center;
+}
