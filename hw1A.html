@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 1A for CIS-128 Mobile Web Application development course at CSM by Ryan Tolentino">
+    <title>Homework 1A</title>
+    <link rel = "stylesheet" href = "hw1_style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                var origSize = $("h1").css("fontSize");
+                console.log(origSize);
+                $("h1").animate({fontSize: '3rem'}, "slow");
+                $("h1").css("color", "navy");
+                $("h1").animate({fontSize: origSize}, "slow");
+                $("img").css("border", "3px solid black");
+                setTimeout(function() { $("h1").css("color", "black")}, 1000);
+            });
+        });
+    </script>
+</head>
+<body>
+
+<button>Click to animate</button>
+
+<header>
+    <h1>CIS-128: Mobile Web App Development</h1>
+</header>
+
+<main>
+
+<div class = "box1">
+    
+<figure>
+    <img class = "img" src = "/Users/FuegLord/Documents/GitHub/rykotono.github.io/Images/IMG_3168.jpg " alt = "Pic of Ryan wearing a black hoodie">
+</figure>
+
+    <p>
+        My name is Ryan Tolentino. I am 24 years old and was born and raised in the 
+        Bay Area. I currently work full-time as a security officer at Cruise, an 
+        autonomous vehicle company in San Francisco. I started working when I was
+        13 years old, cutting hair out of my mother's garage. I graduated high
+        school in 2016 with no plans of going to college. I planned on going to barber
+        school when I saved up enough money, but that changed when COVID hit.
+        Early in 2021 was when I decided to go to school to pursue a computer science
+        degree. I am currently in my 3rd semester of college, and I am dual-enrolled
+        at Skyline College and Diablo Valley College. In my free time, I like to 
+        play guitar, go to the gym, watch basketball, and box.
+    </p>
+    
+</div>
+
+<article>
+    <p>I am attending this class because I want to learn how to build mobile and web
+        applications. I am hoping the learn the fundamentals of writing good front-end 
+        code. I eventually want to become a full stack developer. 
+        My dream job would be to be in the music technology industry and develop
+        virtual instruments. I also want to know how to develop my own web applications
+        for when I start my personal brand.
+    </p>
+</article>
+
+    <h2>Technologies used for this class</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
+
+    <h2>Resources</h2>
+        <ul>
+            <li><a href = "https://www.codecademy.com/" target = "_blank" rel="noopener noreferrer">
+            Codecademy</a> - This website is a great resource for learning
+            the fundamentals of coding. They provide exercises for many popular 
+            programming languages, such as C++, Python, and Java.</li>
+            <li><a href = "https://stackoverflow.com/" target = "_blank" rel="noopener noreferrer">
+            Stack Overflow</a> - This website is a great place to ask for 
+            help if you are stuck on a coding problem. You can post your code, 
+            describe the problem you are experiencing and wait for solutions
+            from other users.</li>
+        </ul>
+    </main>
+</body>
+</html>
